@@ -1,0 +1,111 @@
+# Blacklist files/folders in same directory as this .gitignore file
+/*
+#=====
+
+# Whitelist some files
+!.gitignore
+!README.md
+#=====
+
+# wicd UF wifi template, and SSD optimization
+!/etc/
+/etc/*
+#relatime option to root and home directories as SSD optimization.
+!/etc/fstab
+# Added line to change i/o schedule to deadline.
+!/etc/rc.local
+!/etc/wicd/
+/etc/wicd/*
+!/etc/wicd/encryption/
+/etc/wicd/encryption/*
+!/etc/wicd/encryption/templates/
+/etc/wicd/encryption/templates/*
+# UF wifi template.
+!/etc/wicd/encryption/templates/peap-uf
+#=====
+
+# home folder configure files
+!/home/
+/home/*
+!/home/jwg20286/
+/home/jwg20286/*
+
+# Uncommented "force_color_prompt=yes", so that PS1 is in effect to show colored and bold primary prompt. Added the last export path line to utilize user defined commands in ~/bin/
+!/home/jwg20286/.bashrc
+# vim configure file
+!/home/jwg20286/.vimrc
+
+!/home/jwg20286/.config/
+/home/jwg20286/.config/*
+#-----
+!/home/jwg20286/.config/openbox/
+/home/jwg20286/.config/openbox/*
+# lxde behavior file, particularly important are short cuts.
+!/home/jwg20286/.config/openbox/lxde-rc.xml
+#-----
+!/home/jwg20286/.config/terminator/
+/home/jwg20286/.config/terminator/*
+# terminator config file, used zenburn color scheme.
+!/home/jwg20286/.config/terminator/config
+#-----
+!/home/jwg20286/.config/lxpanel/
+/home/jwg20286/.config/lxpanel/*
+!/home/jwg20286/.config/lxpanel/LXDE/
+/home/jwg20286/.config/lxpanel/LXDE/*
+!/home/jwg20286/.config/lxpanel/LXDE/panels/
+/home/jwg20286/.config/lxpanel/LXDE/panels/*
+# lxde panel configure, the only thing changed is to set lxde digital clock settings clock format to "%m-%d%a %R".
+!/home/jwg20286/.config/lxpanel/LXDE/panels/panel
+#-----
+!/home/jwg20286/.config/leafpad/
+/home/jwg20286/.config/leafpad/*
+# leafpad configure.
+!/home/jwg20286/.config/leafpad/leafpadrc
+
+
+!/home/jwg20286/.vim/
+/home/jwg20286/.vim/*
+!/home/jwg20286/.vim/colors/
+/home/jwg20286/.vim/colors/*
+# solarized vim color scheme.
+!/home/jwg20286/.vim/colors/solarized.vim
+
+
+!/home/jwg20286/bin/
+/home/jwg20286/bin/*
+# UF physics department pdrive mount command.
+!/home/jwg20286/bin/pdrive
+
+
+!/home/jwg20286/environments/
+/home/jwg20286/environments/*
+!/home/jwg20286/environments/py342_env/
+/home/jwg20286/environments/py342_env/*
+!/home/jwg20286/environments/py342_env/bin/
+/home/jwg20286/environments/py342_env/bin/*
+# Python virtualenv activate source, personal codes for appending pythonpath is added at the end.
+!/home/jwg20286/environments/py342_env/bin/activate
+
+
+!/home/jwg20286/texmf/
+/home/jwg20286/texmf/*
+!/home/jwg20286/texmf/tex/
+/home/jwg20286/texmf/tex/*
+!/home/jwg20286/texmf/tex/latex/
+/home/jwg20286/texmf/tex/latex/*
+!/home/jwg20286/texmf/tex/latex/mymacro/
+/home/jwg20286/texmf/tex/latex/mymacro/*
+# Latex macro package.
+!/home/jwg20286/texmf/tex/latex/mymacro/mymacro.sty
+#=====
+
+# synaptics: synclient configure file
+!/usr/
+/usr/*
+!/usr/share/
+/usr/share/*
+!/usr/share/X11/
+/usr/share/X11/*
+!/usr/share/X11/xorg.conf.d/
+/usr/share/X11/xorg.conf.d/*
+!/usr/share/X11/xorg.conf.d/50-synaptics.conf
