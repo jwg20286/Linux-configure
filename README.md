@@ -1,6 +1,5 @@
-# Linux-related
+# Linux system-wise configuration files
 
-Linux related files.
 These were pulled from my lubuntu 14.04 and my debian 8.6 jessie.
 
 If the operating system is installed while not formatting the home partition, texlive manager, tlmgr, needs to be initiated in order to work.
