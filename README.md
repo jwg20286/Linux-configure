@@ -20,7 +20,7 @@ Added VertEdgeScroll, VertScrollDelta, and HorizEdgeScroll, to allow one finger 
 
 **~/.bashrc**:
 Uncommented ```force_color_prompt=yes```, so that PS1 is in effect to show colored and bold primary prompt.
-Added the last export path line to utilize user defined commands in ~/bin/.
+Added the last export path line to utilize user defined commands in **~/bin/**.
 
 **~/.config/openbox/lxde-rc.xml**:
 Added keybinds for window manipulation to include MoveResizeTo and GrowToEdge actions.
