@@ -1,9 +1,3 @@
-"====================tab as spaces======================================
-filetype plugin indent on
-autocmd FileType python setlocal noexpandtab tabstop=8 shiftwidth=8
-autocmd FileType tex setlocal noexpandtab tabstop=2 shiftwidth=2
-"====================show line numbers==================================
-set number
 "====================color scheme=======================================
 if !exists("g:syntax_on")
 	syntax enable
@@ -13,6 +7,20 @@ set background=dark
 colorscheme solarized
 "colorscheme codeschool
 "colorscheme zenburn
+
+"====================show line numbers==================================
+set number
+
+"====================add commands=======================================
+"add one line below, stay in command mode
+map <Enter> o<ESC>
+"add one line above, stay in command mode
+map <S-Enter> O<ESC>
+"--------------------tab as spaces--------------------------------------
+filetype plugin indent on
+autocmd FileType python setlocal noexpandtab tabstop=8 shiftwidth=8
+autocmd FileType tex setlocal noexpandtab tabstop=2 shiftwidth=2
+
 "=====================vim-latex=========================================
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
