@@ -377,6 +377,34 @@
         <command>lxrandr</command>
       </action>
     </keybind>
+    <!-- Fn key bindings -->
+    <keybind key="XF86AudioRaiseVolume"> #raise volume
+      <action name='Execute'>
+	<command>amixer set Master 5%+ unmute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume"> #lower volume
+      <action name='Execute'>
+	<command>amixer set Master 5%- unmute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute"> #mute
+      <action name='Execute'>
+	<command>amixer set Master toggle</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessUp"> #increase screen brightness
+      <action name='Execute'>
+	<command>xbacklight +10</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown"> #decrease screen brightness
+      <action name='Execute'>
+	<command>xbacklight -10</command>
+      </action>
+    </keybind>
+
+
   </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>

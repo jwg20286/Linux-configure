@@ -23,8 +23,10 @@ Uncommented ```force_color_prompt=yes```, so that PS1 is in effect to show color
 Added the last export path line to utilize user defined commands in **~/bin/**.
 
 **~/.config/openbox/lxde-rc.xml**:
+Remember to reload this file after editting by running ```openbox --reconfigure```.
 Added keybinds for window manipulation to include MoveResizeTo and GrowToEdge actions.
 Added keybind to start terminator using C-A-t.
+Added keybind for Fn keys.
 
 **~/.config/terminator/config**:
 Pulled from zenburn project to use zenburn color scheme.
