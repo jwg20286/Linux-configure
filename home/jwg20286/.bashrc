@@ -113,5 +113,6 @@ if ! shopt -oq posix; then
 fi
 
 #===== my additions =====
+# include this line for user defined commands
 export PATH=$PATH:/home/jwg20286/bin/
 
