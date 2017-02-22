@@ -7,6 +7,22 @@
 % creates a mini table to contain the contents so that one can put multiple rows of text in one cell.
 % pos: b,c(default),t; vertical position of the content inside breakcell: b for bottom, c for center, and t for top.
 % content: content of the breakcell, accepts common tabular commands like &, \\, \hline, \newline, and \cline{i-j}.
-\newcommand{\breakcell}[2][t]{\begin{tabular}[#1]{@{}l}#2\end{tabular}}
 
+% single tabular cell with two rows.
+% \breakcell[pos]{row1}{row2}
+% pos: position of text in the cell, default is ``t'' for top;
+% row1: text of row 1;
+% row2: text of row 2.
+\newcommand{\breakcell}[2][t]{\begin{tabular}[#1]{@{}l}#2\end{tabular}}
+% define equal symbol.
+% \defeq
+\newcommand{\defeq}{\vcentcolon=}
+% quod erat demonstrandum symbol.
+% \QED
+\newcommand*{\QED}{\hfill\ensuremath{\square}}
+% use tikz to draw a symbol with text/number inside a circle.
+% \circled{text}.
+% text: text to be put inside the circle.
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 \endinput
