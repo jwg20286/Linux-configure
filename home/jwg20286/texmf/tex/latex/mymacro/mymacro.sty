@@ -14,14 +14,17 @@
 % row1: text of row 1;
 % row2: text of row 2.
 \newcommand{\breakcell}[2][t]{\begin{tabular}[#1]{@{}l}#2\end{tabular}}
-% define equal symbol.
+
 % \defeq
+% define equal symbol.
 \newcommand{\defeq}{\vcentcolon=}
-% quod erat demonstrandum symbol.
+
 % \QED
+% quod erat demonstrandum symbol.
 \newcommand*{\QED}{\hfill\ensuremath{\square}}
-% use tikz to draw a symbol with text/number inside a circle.
+
 % \circled{text}.
+% use tikz to draw a symbol with text/number inside a circle.
 % text: text to be put inside the circle.
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
             \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
