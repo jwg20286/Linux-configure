@@ -1,0 +1,2 @@
+# restore old python path saved by bin/activate script
+export PYTHONPATH="OLD_PYTHONPATH"

@@ -85,6 +85,7 @@
 /home/jwg20286/environments/py342_env/bin/*
 # Python virtualenv activate source, personal codes for appending pythonpath is added at the end.
 !/home/jwg20286/environments/py342_env/bin/activate
+!/home/jwg20286/environments/py342_env/bin/deactivate
 
 
 !/home/jwg20286/texmf/

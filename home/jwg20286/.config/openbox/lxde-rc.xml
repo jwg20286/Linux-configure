@@ -36,7 +36,7 @@
        the active window is -->
   </placement>
   <theme>
-    <name>Onyx-Citrus</name>
+    <name>Natura</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -98,14 +98,14 @@
     <font place="ActiveOnScreenDisplay">
       <name>Sans</name>
       <size>8</size>
-      <weight></weight>
-      <slant></slant>
+      <weight/>
+      <slant/>
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Sans</name>
       <size>8</size>
-      <weight></weight>
-      <slant></slant>
+      <weight/>
+      <slant/>
     </font>
   </theme>
   <desktops>
@@ -379,32 +379,20 @@
     </keybind>
     <!-- Fn key bindings -->
     <keybind key="XF86AudioRaiseVolume"> #raise volume
-      <action name='Execute'>
-	<command>amixer set Master 5%+ unmute</command>
-      </action>
+      <action name="Execute"><command>amixer set Master 5%+ unmute</command></action>
     </keybind>
     <keybind key="XF86AudioLowerVolume"> #lower volume
-      <action name='Execute'>
-	<command>amixer set Master 5%- unmute</command>
-      </action>
+      <action name="Execute"><command>amixer set Master 5%- unmute</command></action>
     </keybind>
     <keybind key="XF86AudioMute"> #mute
-      <action name='Execute'>
-	<command>amixer set Master toggle</command>
-      </action>
+      <action name="Execute"><command>amixer set Master toggle</command></action>
     </keybind>
     <keybind key="XF86MonBrightnessUp"> #increase screen brightness
-      <action name='Execute'>
-	<command>xbacklight +10</command>
-      </action>
+      <action name="Execute"><command>xbacklight +10</command></action>
     </keybind>
     <keybind key="XF86MonBrightnessDown"> #decrease screen brightness
-      <action name='Execute'>
-	<command>xbacklight -10</command>
-      </action>
+      <action name="Execute"><command>xbacklight -10</command></action>
     </keybind>
-
-
   </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>

@@ -80,4 +80,10 @@ if [ -n "$BASH" -o -n "$ZSH_VERSION" ] ; then
 fi
 
 # ===== my pythonpath =====
-export PYTHONPATH="/usr/lib/python3/dist-packages" # added for PyQt4
+# save old pythonpath, to be restored by the bin/deactivate script
+export OLD_PYTHONPATH="$PYTHONPATH"
+
+# 1st: initially added for PyQt4 which is installed with apt-get
+# 2nd: added for my own modules
+export PYTHONPATH="/usr/lib/python3/dist-packages":"/home/jwg20286/Dropbox/Python3/Modules"
+
