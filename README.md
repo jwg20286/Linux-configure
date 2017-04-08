@@ -1,6 +1,6 @@
 # Linux system-wise configuration files
 
-These were pulled from my lubuntu 14.04 and my debian 8.6 jessie.
+These were pulled from my lubuntu 14.04 and my debian 8.6/8.7 jessie.
 
 If the operating system is installed while not formatting the home partition, texlive manager, tlmgr, needs to be initiated in order to work.
 
@@ -54,5 +54,11 @@ Virtual environment activate source, personal codes for appending pythonpath is 
 Latex macro package.
 
 =====  
-tlmgr error: **cannot setup TLPDB in /home/jwg20286/texmf at /usr/bin/tlmgr line 5308** is is generated when tlmgr was not initialized. In most cases, launching the following command (as a normal user) solves the problem:  
++ tlmgr error: **cannot setup TLPDB in /home/jwg20286/texmf at /usr/bin/tlmgr line 5308** is is generated when tlmgr was not initialized. In most cases, launching the following command (as a normal user) solves the problem:  
 `tlmgr init-usertree`  
+
++ Set tlmgr repository:  
+`tlmgr option repository my-repository`  
+for example, `my-repository` is `ftp://tug.org/historic/systems/texlive/2014/tlnet-final` for tlmgr2014.
+
++ Once set, one should be able to search packages with the command `tlmgr search --global --file package_file_name`, and then install it with the command `tlmgr install package_name`. One can also list all installed packages with the command `tlmgr list --only-installed`.  
