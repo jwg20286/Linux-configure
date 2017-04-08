@@ -49,6 +49,10 @@ UF physics department pdrive connection command file.
 **~/environments/py342_env/bin/activate**:
 Virtual environment activate source, personal codes for appending pythonpath is added at the end.
 
-=====
+=====  
 **~/texmf/tex/latex/mymacro/mymacro.sty**:
 Latex macro package.
+
+=====  
+tlmgr error: **cannot setup TLPDB in /home/jwg20286/texmf at /usr/bin/tlmgr line 5308** is is generated when tlmgr was not initialized. In most cases, launching the following command (as a normal user) solves the problem:  
+`tlmgr init-usertree`  
