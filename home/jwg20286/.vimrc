@@ -68,7 +68,7 @@ let g:Tex_CompileRule_pdf = 'pdflatex -interaction=nonstopmode $*'
 " use pdflatex to create pdf instead of dvi as default output format
 let g:Tex_DefaultTargetFormat = 'pdf'
 " When compile to these formats, compile multiple times
-let g:Tex_MultipleCompileFormats = 'dvi,pdf'
+let g:Tex_MultipleCompileFormats = 'dvi,bib,bibtex,pdf'
 
 " go to error after running compilation with \ll command
 let g:Tex_GotoError = 0
