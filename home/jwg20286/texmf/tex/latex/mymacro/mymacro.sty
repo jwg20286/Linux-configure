@@ -1,4 +1,4 @@
-\ProvidesPackage{mymacro}[2017/01/03 v1.0 My own macro]
+\ProvidesPackage{mymacro}[2018/05/29 v1.1 My own macro]
 
 % new commands
 % ----------
@@ -28,4 +28,18 @@
 % text: text to be put inside the circle.
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
             \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+% \numberthis
+% In the align* environment use this after specific line(s) to show tag(s) only for those lines, instead of numbering every line.
+% It is also recommended to put the label at the end of each of those lines for later reference.
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+% \3he
+% the same as typing $^3$He , with a space after it;
+% \4he
+% the same as typing $^4$He, with a space after it.
+\newcommand{\hethree}{$^3$He }
+\newcommand{\hefour}{$^4$He }
+
+
 \endinput
