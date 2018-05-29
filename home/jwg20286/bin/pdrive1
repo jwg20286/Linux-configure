@@ -1,0 +1,3 @@
+#! /bin/bash
+
+sudo mount -t cifs //physicssan02.ad.ufl.edu/Reslabs/ /mnt/Shares -o user=jwg20286,domain=ad.ufl.edu,uid=jwg20286,gid=jwg20286
