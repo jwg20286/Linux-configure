@@ -1,0 +1,10 @@
+#! /bin/bash
+# There are 12 hydras, 9-12 have more cores.
+# Physics servers have separate passwords.
+# Comsol executable is placed in /data/LeeGroupComsol/COMSOL42a/bin/
+
+echo -e "Choose which hydra to connect to: "
+read hydra_name
+server="jwg20286@"$hydra_name".phys.ufl.edu"
+echo "Connecting to "$server
+ssh -X $server
