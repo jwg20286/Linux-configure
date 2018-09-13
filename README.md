@@ -43,8 +43,14 @@ Solarized color scheme for vim. Pulled from solarized project.
 **~/.vimrc**:
 Vim configuration file.
 
+**~/bin/hydra**:
+UF physics department hydra servers connection file.
+
 **~/bin/pdrive**:
-UF physics department pdrive connection command file.
+UF physics department pdrive connection command file. No longer useful since physics server has been moved to a different location.
+
+**~/bin/pdrive1**:
+UF physics department pdrive connection command file (new). 
 
 **~/environments/py342_env/bin/activate**:
 Virtual environment activate source, personal codes for appending pythonpath is added at the end.
