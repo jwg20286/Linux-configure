@@ -75,4 +75,5 @@ let g:Tex_GotoError = 0
 " ignore all warnings below level 4
 let g:TCLevel = 4
 "---------------------------Menu customization---------------------------
+" suppress vim-latexsuite menus in gvim because they made the window too wide
 let g:Tex_Menus = 0
