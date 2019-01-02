@@ -5,6 +5,7 @@ These were pulled from my lubuntu 14.04 and my debian 8.6/8.7 jessie.
 If the operating system is installed while not formatting the home partition, texlive manager, tlmgr, needs to be initiated in order to work.
 
 =====
+
 **etc/cups/printers.conf**:
 Created for physics department printer connections. The file was downloaded from <http://www.phys.ufl.edu/~hansen/printers/printers.conf>. To enable the service, login as the superuser, and run the following commands.
 ```
