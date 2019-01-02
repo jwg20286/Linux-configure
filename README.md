@@ -5,6 +5,15 @@ These were pulled from my lubuntu 14.04 and my debian 8.6/8.7 jessie.
 If the operating system is installed while not formatting the home partition, texlive manager, tlmgr, needs to be initiated in order to work.
 
 =====
+**etc/cups/printers.conf**:
+Created for physics department printer connections. The file was downloaded from <http://www.phys.ufl.edu/~hansen/printers/printers.conf>. To enable the service, login as the superuser, and run the following commands.
+```
+$ service cupsd
+$ service cups reload
+$ service cups restart
+$ lp
+$ lpstat -t
+```
 
 **etc/fstab**:
 Added relatime option to root and home directories as an SSD optimization. Added discard option to enable trim for root and home directories (check trim support: use command ```$ lsblk -D```. Check the values of DISC-GRAN and DISC-MAX columns, non-zero values indicate TRIM support).
