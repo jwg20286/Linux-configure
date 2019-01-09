@@ -116,7 +116,7 @@ fi
 # include this line for user defined commands
 export PATH=$PATH:/home/jwg20286/bin/
 #--------------------------
-# mute system beep
+# turn off system bell in Xorg
 if [ -n "$DISPLAY" ]; then
   xset b off
 fi
