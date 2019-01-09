@@ -31,6 +31,14 @@ Added VertEdgeScroll, VertScrollDelta, and HorizEdgeScroll, to allow one finger 
 **~/.bashrc**:
 Uncommented ```force_color_prompt=yes```, so that PS1 is in effect to show colored and bold primary prompt.
 Added the last export path line to utilize user defined commands in **~/bin/**.
+Added commands to turn off the system bell in Xorg. To mute the system bell: run 
+```
+$ set bell-style none
+```
+To check bell settings in Xorg, execute command:
+```
+$ xset q | grep bell
+```
 
 **~/.config/openbox/lxde-rc.xml**:
 Remember to reload this file after editting by running ```openbox --reconfigure```.
