@@ -25,6 +25,15 @@ Added line to change i/o schedule to deadline.
 **etc/wicd/encryption/templates/peap-uf**: 
 Created to login uf wifi for wifi using wicd. Remember to add file to **active** in the same directory, and then restart wicd.
 
+**etc/wicd/encryption/templates/wpa2-eduroam**:
+Created to login eduroam wifi for wifi using wicd. Remember to add file to **active** in the same directory, and then restart wicd with the code below:
+```
+$ sudo /etc/init.d/wicd stop
+$ killall wicd-client
+$ sudo /etc/init.d/wicd start
+$ wicd-client
+```
+
 **usr/share/X11/xorg.conf.d/50-synaptics.conf**: 
 Added VertEdgeScroll, VertScrollDelta, and HorizEdgeScroll, to allow one finger touchpad scroll.
 
