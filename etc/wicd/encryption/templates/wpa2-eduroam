@@ -1,0 +1,18 @@
+name = Eduroam
+author = WenguangJiang
+version = 1
+require identity *Username password *Password
+----
+ctrl_interface=/var/run/wpa_supplicant
+network={
+  ssid="eduroam"
+  key_mgmt=WPA-EAP
+  pairwise=CCMP
+  group=CCMP TKIP
+  eap=PEAP
+  ca_cert="/usr/share/ca-certificates/mozilla/AddTrust_External_Root.crt"
+  identity="$_IDENTITY"
+  domain_suffix_match="ufl.edu"
+  phase2="auth=MSCHAPV2"
+  password="$_PASSWORD"
+}
