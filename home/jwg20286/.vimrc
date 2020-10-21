@@ -63,7 +63,7 @@ let g:Tex_TEXINPUTS = '~/texmf/tex/**, ./**, ~/.vim/ftplugin/latex-suite/package
 "---------------------------Compilation---------------------------------
 " set compilation rules
 "let g:Tex_CompileRule_dvi= 'latex -interaction=nonstopmode $*'
-let g:Tex_CompileRule_pdf = 'pdflatex -interaction=nonstopmode $*'
+let g:Tex_CompileRule_pdf = 'pdflatex -interaction=nonstopmode $* && bibtex $*'
 
 " use pdflatex to create pdf instead of dvi as default output format
 let g:Tex_DefaultTargetFormat = 'pdf'
